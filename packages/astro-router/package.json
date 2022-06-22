@@ -1,0 +1,25 @@
+{
+  "name": "astro-router",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./Button": "./Button.astro",
+    "./Heading": "./Heading.astro",
+    "./Link": "./Link.astro",
+    "./router": "./router.ts"
+
+  },
+  "files": [
+    "index.js",
+    "Button.astro",
+    "Heading.jsx"
+  ],
+  "keywords": [
+    "astro-component",
+    "performance",
+    "seo",
+    "astro prefetch",
+    "astro link"
+  ]
+}

@@ -1,0 +1,36 @@
+---
+export interface Props extends Record<any, any> {
+    to: string,
+    prefetch?: boolean,
+    query?: object,
+    class?: string
+}
+
+const { to, prefetch, query = undefined, style, ...props } = Astro.props;
+
+const keys = query !== undefined && Object.keys(query);
+const values = query !== undefined && Object.values(query);
+
+const align = query !== undefined && keys.map((key, index) => {
+    return `${keys[index]}=${values[index]}`;
+});
+
+const queryList = query !== undefined && align.join("&");
+
+const finalUrl = query ? `${to}?${queryList}` : to
+
+---
+
+<script define:vars={{ prefetch, finalUrl }}>
+    if (prefetch === true) {
+        const link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.as = 'document';
+        link.href = finalUrl;
+        document.head.appendChild(link);
+    }
+</script>
+
+<a href={finalUrl} {...props}>
+    <slot />
+</a>
