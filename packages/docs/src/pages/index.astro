@@ -13,7 +13,8 @@ const description =
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛰</text></svg>" />
+	<link rel="icon"
+		href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛰</text></svg>" />
 
 
 	<title>Astro Router</title>
@@ -35,31 +36,13 @@ const description =
 	<!-- <meta property="og:image" content={image} /> -->
 	<!-- <meta property="og:url" content={site} /> -->
 	<meta name="twitter:card" content="summary_large_image" />
-
-	<!-- initialize theme -->
-	<script is:inline>
-      const themeSaved = localStorage.getItem("theme");
-
-      if (themeSaved) {
-        document.documentElement.dataset.theme = themeSaved;
-      } else {
-        const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
-        ).matches;
-        document.documentElement.dataset.theme = prefersDark ? "dark" : "light";
-      }
-
-      window
-        .matchMedia("(prefers-color-scheme: dark)")
-        .addEventListener("change", (event) => {
-          if (!localStorage.getItem("theme")) {
-            document.documentElement.dataset.theme = event.matches
-              ? "dark"
-              : "light";
-          }
-        });
-    </script>
 </head>
+
+
+<script>
+	import { router } from 'astro-router'
+	router.prefetch('en/introduction')
+</script>
 
 <body class="h-full overflow-x-hidden text-base bg-default text-default selection:bg-secondary selection:text-white">
 	<!-- <Header /> -->
