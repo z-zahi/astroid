@@ -10,7 +10,7 @@ A javascript function to add functionality on top of the Astro routing system
 
 ```
 ---
-import { Link } from 'astro-router'
+import { Link } from 'astroid'
 ---
 ...
 
@@ -18,7 +18,7 @@ import { Link } from 'astro-router'
 <button id="btn">Navigation</button>
 
 <script>
-    import { router } from 'astro-router'
+    import { router } from 'astroid'
 
 	const btn = document.getElementById('btn')
 		btn.onclick = function () {

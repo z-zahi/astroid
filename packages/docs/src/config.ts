@@ -1,5 +1,5 @@
 export const SITE = {
-	title: 'Astro Router',
+	title: 'Astroid',
 	description: 'Extend Astro routing system.',
 	defaultLanguage: 'en_US',
 };
@@ -8,7 +8,7 @@ export const OPEN_GRAPH = {
 	image: {
 		src: 'https://github.com/withastro/astro/blob/main/assets/social/banner.jpg?raw=true',
 		alt:
-			'astro router logo in space.'
+			'astroid logo in space.'
 	},
 	twitter: 'xis___',
 };
@@ -34,7 +34,7 @@ export const KNOWN_LANGUAGES = {
 export const SIDEBAR = {
 	en: [
 		{ text: '', header: true },
-		{ text: 'Astro Router', header: true },
+		{ text: 'Astroid', header: true },
 		{ text: 'Introduction', link: 'en/introduction' },
 		{ text: 'Installation', link: 'en/installation' },
 

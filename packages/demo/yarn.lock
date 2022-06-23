@@ -557,9 +557,9 @@ ast-types@0.14.2, ast-types@^0.14.2:
   dependencies:
     tslib "^2.0.1"
 
-astro-router@*:
+astroid@*:
   version "0.0.1"
-  resolved "https://registry.yarnpkg.com/astro-router/-/astro-router-0.0.1.tgz#360aa8f9f271a376951393161b5f7c9793ed2322"
+  resolved "https://registry.yarnpkg.com/astroid/-/astroid-0.0.1.tgz#360aa8f9f271a376951393161b5f7c9793ed2322"
   integrity sha512-q49kyXjVJOZC6YAeInRg4lZOjfxFtxoVdAdD0q94w5SRlO5w9lcRv2ZGZtFBQwP5zsMzy42HsJhHV/rK2anKLA==
 
 astro@^1.0.0-beta.47:

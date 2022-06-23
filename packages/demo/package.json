@@ -12,7 +12,7 @@
     "@astrojs/tailwind": "^0.2.1",
     "@types/node": "^18.0.0",
     "astro": "1.0.0-beta.51",
-    "astro-router": "*"
+    "astroid": "*"
   },
   "dependencies": {
     "browserify": "^17.0.0"

@@ -11,7 +11,7 @@ A simple Astro component to ease working with queries and prefetching
 
 ```
 ---
-import { Link } from 'astro-router'
+import { Link } from 'astroid'
 ---
 
 <Link to="/somewhere" query={{ name: 'Ali', number: '6' }} prefetch={true}>Link name</Link>

@@ -1,20 +1,22 @@
-# Astro Router 🚀🛰
+# Astroid 🚀☄️
+
+Extend Astro Routing
 
 ```shell
 # npm
-npm i astro-router --save-dev
+npm i astroid --save-dev
 
 # yarn
-yarn add -D astro-router
+yarn add -D astroid
 
 # pnpm
-pnpm i astro-router --save-dev
+pnpm i astroid --save-dev
 ```
 ## Link
 
 ```
 ---
-import { Link } from 'astro-router'
+import { Link } from 'astroid'
 ---
 
 <Link to="/somewhere" query={{ name: 'Ali', number: '6' }} prefetch={true}>Link name</Link>
@@ -28,7 +30,7 @@ Note that prefetching is disabled by default, to enable it use ```prefetch={true
 
 ```
 ---
-import { Link } from 'astro-router'
+import { Link } from 'astroid'
 ---
 ...
 
@@ -36,7 +38,7 @@ import { Link } from 'astro-router'
 <button id="btn">Navigation</button>
 
 <script>
-    import { router } from 'astro-router'
+    import { router } from 'astroid'
 
 	const btn = document.getElementById('btn')
 		btn.onclick = function () {

@@ -4,9 +4,9 @@ description: Docs intro
 layout: ../../layouts/MainLayout.astro
 ---
 
-**About Astro Router**
+**About astroid**
 
-`Astro Router` is a complete open-source router library inspired by Next.js router for Astro applications thats adds on it's router:
+`astroid` is a complete open-source router library inspired by Next.js router for Astro applications thats adds on it's router:
 
 
 - ✅ **Link component**
