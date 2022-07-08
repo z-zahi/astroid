@@ -3,6 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "workspaces": ["packages/astroid", "packages/docs", "packages/demo"],
+  "keywords": [
+    "astro-component",
+    "performance",
+    "seo",
+    "astro prefetch",
+    "astro link"
+  ],
   "scripts": {
     "start": "astro --root demo dev",
     "build": "astro --root demo build",
