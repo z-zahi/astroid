@@ -1,7 +1,8 @@
 {
   "name": "@example/component",
   "version": "0.0.1",
-  "license" : "MIT", 
+  "license" : "MIT",
+  "private": true,
   "workspaces": ["packages/astroid", "packages/docs", "packages/demo"],
   "keywords": [
     "astro-component",
